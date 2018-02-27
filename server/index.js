@@ -78,7 +78,7 @@ app.get('/logout', (req, res) => {
 
 // Dees endpoints
 const { getAddresses, addNewAddress } = accountController
-app.get('/api/getAddresses', getAddresses)
 app.post('/api/addNewAddress', addNewAddress)
+app.get('/api/getAddresses', getAddresses)
 
 app.listen( SERVER_PORT, () => console.log(`Let it do on port ${SERVER_PORT}`) )

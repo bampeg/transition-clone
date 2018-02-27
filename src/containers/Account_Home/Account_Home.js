@@ -37,6 +37,7 @@ class Account extends Component {
     
     render() {
         const { peddlerData }= this.props
+        console.log(peddlerData)
 
         let accountStuff = `Account name: ${peddlerData.peddler_first_name} ${peddlerData.peddler_last_name}`
           , creditCardStuff = <button>GIVE US YOUR MONEY</button>
