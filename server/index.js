@@ -5,6 +5,8 @@ const express = require('express')
     , massive = require('massive')
     , passport = require('passport')
     , Auth0Strategy = require('passport-auth0')
+    , bodyParser = require('body-parser')
+    , accountController = require('./controllers/accountController')
 
 const { 
     SERVER_PORT,
@@ -18,6 +20,7 @@ const {
 
 const app = express()
 
+app.use( bodyParser.json() )
 app.use( session({
     secret: SESSION_SECRET,
     resave: false,
@@ -72,5 +75,10 @@ app.get('/logout', (req, res) => {
     // console.log('Logout successful.')
     res.redirect('http://localhost:3000/#/Account_Logout')
 })
+
+// Dees endpoints
+const { getAddresses, addNewAddress } = accountController
+app.get('/api/getAddresses', getAddresses)
+app.post('/api/addNewAddress', addNewAddress)
 
 app.listen( SERVER_PORT, () => console.log(`Let it do on port ${SERVER_PORT}`) )

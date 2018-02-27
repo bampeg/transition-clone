@@ -1,0 +1,23 @@
+.footerLogo {
+    height: 40vh;
+    background-color: black;
+    margin-bottom: 2em;
+    padding-top: 2em;
+}
+
+.footerLogoImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footerSentence {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+}
+
+.footerSentenceLink {
+    color: #3399ff;
+}

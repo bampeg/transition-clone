@@ -1,4 +1,5 @@
-import { createStore } from 'redux'
-import account_reducer from 
+import { createStore, applyMiddleware } from 'redux'
+import promiseMiddleware from 'redux-promise-middleware'
+import reducer from './ducks/reducer' 
 
-export default createStore()
+export default createStore( reducer, applyMiddleware( promiseMiddleware() ) )

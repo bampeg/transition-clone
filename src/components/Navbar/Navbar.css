@@ -1,0 +1,14 @@
+.nav {
+    height: 68px;
+    background-color: black;
+}
+
+.topLeftLogo {
+    height: 68px;
+}
+
+.nav_hamburger {
+    float: right;
+    padding-right: 10px;
+    padding-top: 1em;
+}

@@ -1,0 +1,20 @@
+.boxTitle {
+    font-size: 1.4em;
+}
+
+.notExpanded {
+    background-color: #666666;
+    border-top: 1px solid black;
+    cursor: pointer;
+    padding: 3px;
+    height: auto;
+}
+
+.expanded {
+    box-sizing: border-box;
+    background-color: gray;
+    border-top: 1px solid black;
+    cursor: pointer;
+    padding: 3px;
+    height: auto;
+}

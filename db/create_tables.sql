@@ -3,11 +3,27 @@ CREATE TABLE IF NOT EXISTS peddlers(
     auth_id TEXT,
     peddler_first_name VARCHAR(60),
     peddler_last_name VARCHAR(60),
-    peddler_email VARCHAR(60),
-    peddler_address VARCHAR(60),
-    peddler_city VARCHAR(60),
-    peddler_state VARCHAR(60),
-    peddler_zip INT
+    -- peddler_email VARCHAR(60),
+    -- peddler_address VARCHAR(60),
+    -- peddler_city VARCHAR(60),
+    -- peddler_state VARCHAR(60),
+    -- peddler_zip INT
+);
+
+CREATE TABLE IF NOT EXISTS peddler_address(
+    address_id SERIAL PRIMARY KEY,
+    address_peddler_id INT,
+    address_description VARCHAR(240),
+    address_name VARCHAR(60),
+    company_name VARCHAR(60),
+    street_1 VARCHAR(60),
+    street_2 VARCHAR(60),
+    city VARCHAR(60),
+    state_province VARCHAR(60),
+    postal_code INT,
+    country VARCHAR(60),
+    phone INT,
+    email VARCHAR(60)
 );
 
 CREATE TABLE IF NOT EXISTS product_groups(

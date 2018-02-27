@@ -1,0 +1,39 @@
+.AddressBook_mainContainer {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.AddressBook_header {
+    font-size: 14px;
+    padding: 3px;
+}
+
+.AddressBook_addressContainer {
+    margin-top: 8px;
+    background-color: #CCCCCC;
+    padding: 3px;
+}
+
+.AddressBook_description {
+    font-weight: bold;
+}
+
+.AddressBook_addyinfo {
+    font-size: 11px;
+    padding: 1px;
+}
+
+.AddressBook_footer {
+    color: #3399ff;
+    font-size: 11px;
+}
+
+.AddressBook_newAddressButton {
+    width: 200px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 3px 5px 3px 5px;
+    background-color: #3399ff;
+    color: black;
+}
