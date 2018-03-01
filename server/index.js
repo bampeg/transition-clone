@@ -24,6 +24,7 @@ const {
 
 const app = express()
 
+app.use( express.static( `${__dirname}/../build` ) )
 app.use( bodyParser.json() )
 app.use( session({
     secret: SESSION_SECRET,
