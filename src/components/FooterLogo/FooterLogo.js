@@ -4,10 +4,10 @@ import './FooterLogo.css'
 
 export default function FooterLogo() {
     return(
-        <div className='footerLogo'>
-            <img className='footerLogoImg' src={ footerLogo } alt=''/>
-            <div className='footerSentence'>
-                YOU HAVE REACHED THE BOTTOM OF TRANSITIONBIKES.COM. IF YOU GET BORED DOWN HERE, <a className='footerSentenceLink'>CLICK HERE</a> AND WE CAN TAKE YOU BACK TO THE TOP.
+        <div className='footerLogo_container'>
+            <img className='footerLogo_img' src={ footerLogo } alt=''/>
+            <div className='footerLogo_Sentence'>
+                YOU HAVE REACHED THE BOTTOM OF TRANSITIONBIKES.COM. IF YOU GET BORED DOWN HERE, <a className='footerLogo_bottomLink'>CLICK HERE</a> AND WE CAN TAKE YOU BACK TO THE TOP.
             </div>
         </div>
     )

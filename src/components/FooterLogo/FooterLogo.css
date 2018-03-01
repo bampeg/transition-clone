@@ -1,23 +1,21 @@
-.footerLogo {
-    height: 40vh;
+.footerLogo_container {
+    width: 100%;
+    height: auto;
     background-color: black;
-    margin-bottom: 2em;
-    padding-top: 2em;
 }
 
-.footerLogoImg {
+.footerLogo_img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 5px auto;
 }
 
-.footerSentence {
+.footerLogo_Sentence {
     background-color: black;
     color: white;
     text-align: center;
     font-size: 10px;
 }
 
-.footerSentenceLink {
+.footerLogo_bottomLink {
     color: #3399ff;
 }

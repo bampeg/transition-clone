@@ -15,7 +15,11 @@ const {
     DOMAIN,
     CLIENT_ID,
     CLIENT_SECRET,
-    CALLBACK_URL
+    CALLBACK_URL,
+    REACT_APP_LOGIN,
+    REACT_APP_SUCCESS_REDIRECT,
+    REACT_APP_LOGOUT_REDIRECT,
+    REACT_APP_FAILURE_REDIRECT
 } = process.env
 
 const app = express()
@@ -62,7 +66,7 @@ passport.deserializeUser( (id, done) => {
 } )
 
 app.get('/auth', passport.authenticate('auth0'))
-app.get('/auth/callback', passport.authenticate('auth0', { successRedirect: 'http://localhost:3000/#/Account_Home', failureRedirect: 'http://localhost:3000/error' }))
+app.get('/auth/callback', passport.authenticate('auth0', { successRedirect: REACT_APP_SUCCESS_REDIRECT, failureRedirect: REACT_APP_FAILURE_REDIRECT }))
 app.get('/auth/me', (req, res) => {
     if(!req.user) {
         res.status(404).send('Not logged in.')
@@ -73,12 +77,13 @@ app.get('/auth/me', (req, res) => {
 app.get('/logout', (req, res) => {
     req.logOut()
     // console.log('Logout successful.')
-    res.redirect('http://localhost:3000/#/Account_Logout')
+    res.redirect(REACT_APP_LOGOUT_REDIRECT)
 })
 
 // Dees endpoints
-const { getAddresses, addNewAddress } = accountController
+const { getAddresses, addNewAddress, deleteAddress } = accountController
 app.post('/api/addNewAddress', addNewAddress)
 app.get('/api/getAddresses', getAddresses)
+app.delete('/api/deleteAddress/:addyID', deleteAddress)
 
 app.listen( SERVER_PORT, () => console.log(`Let it do on port ${SERVER_PORT}`) )

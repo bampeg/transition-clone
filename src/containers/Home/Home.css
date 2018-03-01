@@ -1,0 +1,17 @@
+.Home_mainImg {
+    height: auto;
+    width: 100%;
+}
+
+.Home_featurePres {
+    height: auto;
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 2em;
+}
+
+.Home_container {
+    height: auto;
+    width: 100%;
+}

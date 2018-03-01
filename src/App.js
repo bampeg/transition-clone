@@ -6,16 +6,18 @@ import Account_Logout from './containers/Account_Logout/Account_Logout'
 import Account_Home from './containers/Account_Home/Account_Home'
 import Navbar from './components/Navbar/Navbar'
 import FooterLogo from './components/FooterLogo/FooterLogo'
+import Bikes from './containers/Bikes/Bikes'
 
 export default class App extends Component {
   render() {
     return (
       <div className="App">
         <HashRouter>
-          <div>
+          <div className="App_container">
             <Navbar/>
             <Switch>
               <Route path='/Home' component={ Home }/>
+              <Route path='/Bikes' component={ Bikes }/>
               <Route path='/Account_Login' component={ Account_Login }/>
               <Route path='/Account_Home' component={ Account_Home }/>
               <Route path='/Account_Logout' component={ Account_Logout }/>

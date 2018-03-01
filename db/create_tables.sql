@@ -13,17 +13,17 @@ CREATE TABLE IF NOT EXISTS peddlers(
 CREATE TABLE IF NOT EXISTS peddler_address(
     address_id SERIAL PRIMARY KEY,
     address_peddler_id INT,
-    address_description VARCHAR(240),
-    address_name VARCHAR(60),
-    company_name VARCHAR(60),
-    street_1 VARCHAR(60),
-    street_2 VARCHAR(60),
-    city VARCHAR(60),
-    state_province VARCHAR(60),
-    postal_code INT,
-    country VARCHAR(60),
-    phone INT,
-    email VARCHAR(60)
+    address_description TEXT,
+    address_name TEXT,
+    company_name TEXT,
+    street_1 TEXT,
+    street_2 TEXT,
+    city TEXT,
+    state_province TEXT,
+    postal_code TEXT,
+    country TEXT,
+    phone TEXT,
+    email TEXT
 );
 
 CREATE TABLE IF NOT EXISTS product_groups(

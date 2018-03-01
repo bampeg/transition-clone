@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { getPeddler, addNewAddress } from '../../ducks/reducer'
+import { getPeddler, addNewAddress, getAddresses } from '../../ducks/reducer'
 import './Account_Home.css'
 import ExpandableBox from '../../components/ExpandableBox/ExpandableBox'
 import AddressBook from '../../components/AddressBook/AddressBook'
@@ -15,6 +15,7 @@ class Account extends Component {
 
     componentDidMount() {
         this.props.getPeddler()
+        this.props.getAddresses()
     }
 
     greetamajig() {
@@ -37,7 +38,7 @@ class Account extends Component {
     
     render() {
         const { peddlerData }= this.props
-        console.log(peddlerData)
+        // console.log(peddlerData)
 
         let accountStuff = `Account name: ${peddlerData.peddler_first_name} ${peddlerData.peddler_last_name}`
           , creditCardStuff = <button>GIVE US YOUR MONEY</button>
@@ -80,4 +81,4 @@ function mapStateToProps(state) {
     }
 }
 
-export default connect( mapStateToProps, { getPeddler, addNewAddress } )(Account)
+export default connect( mapStateToProps, { getPeddler, addNewAddress, getAddresses } )(Account)
