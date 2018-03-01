@@ -16,11 +16,11 @@ export default class App extends Component {
           <div className="App_container">
             <Navbar/>
             <Switch>
-              <Route path='/Home' component={ Home }/>
               <Route path='/Bikes' component={ Bikes }/>
               <Route path='/Account_Login' component={ Account_Login }/>
               <Route path='/Account_Home' component={ Account_Home }/>
               <Route path='/Account_Logout' component={ Account_Logout }/>
+              <Route path='/' component={ Home }/>
             </Switch>
           </div>
         </HashRouter>
