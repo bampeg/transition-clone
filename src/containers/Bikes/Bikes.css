@@ -1,11 +1,12 @@
-.Bikes_mainImg {
-    width: 100%;
-}
 
 .Bikes_mainContainer {
     background-color: #666666;
+    
+}
 
+.Bikes_bike {
+    width: 80%;
+    margin: auto;
+    padding: 5px;
 }
-.Bikes_container {
-    height: 50vh;
-}
+

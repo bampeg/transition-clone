@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import './Bikes.css'
+import BikeTile from '../../components/BikeTile/BikeTile'
 import bikesOverview from '../../images/BikesOverview_1.jpg'
+import tr11image from '../../images/BikeButton_TR11.gif'
 
 class Bikes extends Component {
     constructor(props) {
@@ -9,13 +11,21 @@ class Bikes extends Component {
         this.state = {}
     }
 
+
+
     render() {
         return (
             <div className="Bikes_mainContainer">
                 <img className="Home_mainImg" src={bikesOverview} alt="" />
-                <div className="Bikes_container">
-
-                </div>
+                <BikeTile bikeTileTitle="TR11" bikeTileImage={tr11image} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front"/>
+                <BikeTile bikeTileTitle="TR11" bikeTileImage={tr11image} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front"/>
+                <BikeTile bikeTileTitle="TR11" bikeTileImage={tr11image} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front"/>
+                <BikeTile bikeTileTitle="TR11" bikeTileImage={tr11image} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front"/>
+                <BikeTile bikeTileTitle="TR11" bikeTileImage={tr11image} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front"/>
+                <BikeTile bikeTileTitle="TR11" bikeTileImage={tr11image} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front"/>
+                <BikeTile bikeTileTitle="TR11" bikeTileImage={tr11image} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front"/>
+                <BikeTile bikeTileTitle="TR11" bikeTileImage={tr11image} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front"/>
+                <BikeTile bikeTileTitle="TR11" bikeTileImage={tr11image} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front"/>
             </div>
         )
     }

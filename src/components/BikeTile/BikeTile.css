@@ -1,0 +1,21 @@
+.BikeTile_image {
+    position: relative;
+    width: 100%;
+    margin: 15px auto 0 auto;
+}
+
+.BikeTile_button {
+    background: #3399ff;
+    margin: 0 auto 15px auto;
+    padding: 5px;
+    text-align: center;
+    font-size: 21px;
+    color: black;
+    width: 50px;
+}
+
+.BikeTile_info {
+    font-size: 14px;
+    color: black;
+    text-align: center;
+}
