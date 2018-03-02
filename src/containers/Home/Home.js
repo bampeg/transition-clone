@@ -11,7 +11,7 @@ export default class Home extends Component {
         return (
             <div className="Home_container">
                 <img className="Home_mainImg" src={homepageRiderOwnedImg} alt="" />
-                <FunFaces />
+                <FunFaces/>
                 <div className="Home_featurePres">FEATURE PRESENTATION</div>
             </div>
         )
