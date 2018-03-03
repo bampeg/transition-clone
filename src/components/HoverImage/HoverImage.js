@@ -23,9 +23,8 @@ export default class HoverImage extends Component {
 
     render() {
         return(
-            <div className="HoverImage_container" onMouseOver={() => this.handleMouseOver(this.props.hoverImage)} onMouseOut={() => this.handleMouseOut(this.props.defaultImage)}>
-                <img className="HoverImage_image" src={this.state.image} alt=""/>
-            </div>
+                <img className="HoverImage" src={this.state.image} alt="" onMouseOver={() => this.handleMouseOver(this.props.hoverImage)} onMouseOut={() => this.handleMouseOut(this.props.defaultImage)}/>
+
         )
     }
 }

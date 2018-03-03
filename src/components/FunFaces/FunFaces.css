@@ -1,5 +1,6 @@
 .FunFaces_mainContainer {
-    display: block;
-    width: 100%;
-
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: white;
 }

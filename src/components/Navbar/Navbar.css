@@ -1,22 +1,30 @@
-.nav {
+.Navbar {
     height: 8vh;
     background-color: black;
 }
 
-.topLeftLogo {
+.Navbar_topLeftLogo {
     height: 8vh;
 }
 
-.nav_hamburger {
+.Navbar_hamburger {
     float: right;
     padding-right: 10px;
     padding-top: 1em;
 }
 
-.openHamburger {
+.Navbar_openHamburger {
     background-color: black;
 }
 
-.openHamburger div {
+.Navbar_openHamburger div {
+    padding: 5px 10px;
+    border-top: gray solid .3px;
+    text-align: right;
+    align-items: right;
     color: white;
+}
+
+.Navbar_imageLinks img {
+    padding: 2px 0 2px 4px;
 }
