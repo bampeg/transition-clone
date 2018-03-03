@@ -19,3 +19,22 @@
     width: 100%;
     background: black;
 }
+
+.Home_smugglerPres {
+    width: 100%;
+    padding-top: 1em;
+}
+
+.Home_blockMessage {
+    padding: 1em .5em;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+.Home_megaFeatures {
+    padding: 1em;
+    background: white;
+    text-align: center;
+    font-size: 24px;
+}
