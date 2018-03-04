@@ -33,9 +33,9 @@ export default function Home() {
                 <img className="Home_mainImg" src={homepageRiderOwnedImg} alt="" />
                 <FunFaces/>
                 <div className="Home_featurePres">FEATURE PRESENTATION</div>
-                <iframe className="Home_vimeo" title="FarmerPatrol" src="https://player.vimeo.com/video/255323594" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen/>
+                <iframe className="Home_vimeo" title="FarmerPatrol" src="https://player.vimeo.com/video/255323594" width="640" height="360" frameBorder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowFullScreen="true"/>
                 <img className="Home_smugglerPres" src={carbonSmuggler1} alt=""/>
-                <iframe className="Home_vimeo" title="FarmerPatrol" src="https://player.vimeo.com/video/249437283" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen/>
+                <iframe className="Home_vimeo" title="FarmerPatrol" src="https://player.vimeo.com/video/249437283" width="640" height="360" frameBorder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowFullScreen="true"/>
                 <img className="Home_smugglerPres" src={carbonSmuggler2} alt=""/>
                 <img className="Home_smugglerPres" src={carbonSmuggler3} alt=""/>
                 <div className="Home_blockMessage">The Hunter.</div>
@@ -70,21 +70,6 @@ export default function Home() {
                 <img className="Home_smugglerPres" src={carbonSmuggler19} alt=""/>
                 <div className="Home_blockMessage">Four years of work went into making the carbon Smuggler. Each bike is the product of many individuals here at Transition Bikes. We're pumped on the finished product, and hope you are as well!</div>
                 <div className="Home_megaFeatures">MORE MEGA FEATURES</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             </div>
         )
 }

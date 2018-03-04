@@ -1,0 +1,48 @@
+.Who_container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.Who_mainImg {
+    width: 100%;
+}
+
+.Who_bottomImg {
+    width: 100%;
+}
+
+.Who_paragraph {
+    font-size: 12px;
+    padding: 1em;
+}
+
+.Who_contactInfoContainer {
+    padding: 1em;
+} 
+
+.Who_contactInfoContainer div {
+    text-align: center;   
+}
+
+.Who_contactHeader {
+    font-size: 32px;
+}
+
+.Who_contactTitle {
+    font-size: 12;
+    color: gray;
+}
+
+.Who_contactInfo div {
+    font-size: 12px;
+}
+
+.Who_space {
+    height: 14px;
+}
+
+.Who_vimeo {
+    background: black;
+    width: 100%;
+}

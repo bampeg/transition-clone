@@ -7,6 +7,7 @@ import Account_Home from './containers/Account_Home/Account_Home'
 import Navbar from './components/Navbar/Navbar'
 import FooterLogo from './components/FooterLogo/FooterLogo'
 import Bikes from './containers/Bikes/Bikes'
+import Who from './containers/Who/Who'
 
 export default class App extends Component {
   render() {
@@ -17,6 +18,7 @@ export default class App extends Component {
             <Navbar/>
             <Switch>
               <Route path='/Bikes' component={ Bikes }/>
+              <Route path='/Who' component={ Who }/>
               <Route path='/Account_Login' component={ Account_Login }/>
               <Route path='/Account_Home' component={ Account_Home }/>
               <Route path='/Account_Logout' component={ Account_Logout }/>
