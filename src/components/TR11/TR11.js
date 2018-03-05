@@ -1,4 +1,5 @@
 import React from 'react'
+import './TR11.css'
 
 import TR11MainImg from '../../images/Bikes_MainActionImage_TR11.jpg'
 import TR11FullImg from '../../images/Bikes_MainDark_TR11_V3.jpg'

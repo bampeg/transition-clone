@@ -5,3 +5,17 @@
 .TR11_mainImg {
     width: 100%;
 }
+
+.TR11_blockMessage {
+    background: black;
+    color: white;
+    padding: 2em 3em;
+    font-size: 1em;
+}
+
+@media (min-width: 1200px) {
+    .TR11_blockMessage {
+        padding: 2em 4em;
+        font-size: 1.2em;
+    }
+}

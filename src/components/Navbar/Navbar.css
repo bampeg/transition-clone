@@ -1,3 +1,7 @@
+.Navbar_container {
+    width: 100%;
+}
+
 .Navbar {
     height: 58px;
     background-color: black;
@@ -36,11 +40,9 @@
     .Navbar div {
         display: none;
     }
-
     .Navbar_hamburger {
         display: block;
     }
-
     .Navbar_topLeftLogo {
         height: 58px;
     }
@@ -50,7 +52,6 @@
     .Navbar_topLeftLogo {
         height: 134px;
     }
-
     .Navbar {
         display: block;
         position: absolute;
@@ -60,14 +61,12 @@
         background-color: #000000;
         padding: 2px;
     }
-
     .Navbar a {
         display: block;
         float: right;
         padding: 4px;
         margin-top: 2px;
     }
-
     .Navbar div {
         display: block;
         color: white;
@@ -75,8 +74,6 @@
         float: right;
         padding: 2px;
     }
-
-
     .Navbar_hamburger {
         display: none;
     }

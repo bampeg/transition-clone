@@ -263,11 +263,7 @@ class AddressBook extends Component {
             )
         }
 
-        return (
-            <div>
-                {contents}
-            </div>
-        )
+        return contents
 
     }
 }
