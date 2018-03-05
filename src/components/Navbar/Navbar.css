@@ -40,9 +40,17 @@
     .Navbar_hamburger {
         display: block;
     }
+
+    .Navbar_topLeftLogo {
+        height: 58px;
+    }
 }
 
 @media (min-width: 1200px) {
+    .Navbar_topLeftLogo {
+        height: 134px;
+    }
+
     .Navbar {
         display: block;
         position: absolute;
