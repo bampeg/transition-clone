@@ -4,9 +4,10 @@
     
 }
 
-.Bikes_bike {
-    width: 80%;
-    margin: auto;
-    padding: 5px;
+@media (min-width: 1200) {
+    .Bikes_bike {
+        width: 80%;
+        margin: auto;
+        padding: 5px;
+    }
 }
-

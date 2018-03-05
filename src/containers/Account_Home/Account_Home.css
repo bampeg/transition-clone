@@ -3,7 +3,18 @@
     background-color: #666666;
 }
 
-.accountContainer {
-    padding: 5em 1em;
-    background-color: #666666;
+@media (min-width: 1200px) {
+    .accountContainer {
+        min-height: 100vh;
+        padding: 12em 4em;
+        background-color: #666666;
+    }
+}
+
+@media (max-width: 1200px) {
+    .accountContainer {
+        min-height: 100vh;
+        padding: 4em 2em;
+        background: #666666;
+    }
 }

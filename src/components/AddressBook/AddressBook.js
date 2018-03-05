@@ -49,8 +49,8 @@ class AddressBook extends Component {
     }
 
     render() {
-        console.log(this.props.state.addresses, 'this right here')
-        let peddlerAddresses = (this.props.state.addresses === []) ? null : this.props.state.addresses.map(address => {
+        console.log(this.props.state.addresses)
+        let peddlerAddresses = !this.props.state.addresses[0] ? null : this.props.state.addresses.map(address => {
             let { address_id, address_description, address_name, company_name, street_1, street_2, city, state_province, postal_code, country, phone, email } = address
             return (
                 <div key={address_id} className='AddressBook_addressContainer'>
@@ -65,7 +65,7 @@ class AddressBook extends Component {
                     <div className='AddressBook_addyinfo'>{email}</div>
                     <div className='AddressBook_footer'>
                         <div onClick={() => this.setState({ isEditingOn: address_id })} className='AddressBook_edit'>EDIT</div>
-                        <div onClick={() => this.handleAddressDelete(address_id)} className='AddressBook_delete'>DELETE {address_id}</div>
+                        <div onClick={() => this.handleAddressDelete(address_id)} className='AddressBook_delete'>DELETE</div>
                     </div>
                 </div>
             )
@@ -82,14 +82,14 @@ class AddressBook extends Component {
         )
 
         if (this.state.isEditingOn) {
-            let addyToEdit = this.props.state.addresses.filter(addy => addy.address_id === this.state.isEditingOn)[0]
-            let { address_id, address_description, address_name, company_name, street_1, street_2, city, state_province, postal_code, country, phone, email } = addyToEdit
+            // let addyToEdit = this.props.state.addresses.filter(addy => addy.address_id === this.state.isEditingOn)[0]
+            // let { address_id, address_description, address_name, company_name, street_1, street_2, city, state_province, postal_code, country, phone, email } = addyToEdit
             contents = (
                 <div className='AddressBook_mainContainer'>
                     <div className='AddressBook_header'>YOU MAY EDIT YOUR ADDRESS BELOW.</div>
                     <div className='AddressBook_addressContainer'>
                         <div className='AddressBook_addyinfo'>DESCRIPTION</div>
-                        <input type="text" onChange={e => this.handleEditAddressInput(e.target.value, 'description')} value={this.state.description}/>
+                        <input type="text" onChange={e => this.handleEditAddressInput(e.target.value, 'description')} value={this.state.description} />
                         <div className='AddressBook_addyinfo'>NAME</div>
                         <input type="text" onChange={e => this.handleEditAddressInput(e.target.value, 'name')} value={this.state.name} />
                         <div className='AddressBook_addyinfo'>COMPANY NAME (OPTIONAL)</div>

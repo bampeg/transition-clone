@@ -46,51 +46,51 @@ class Bikes extends Component {
         console.log(this.state.displayBike)
 
         let bikeDisplay = <div className="Bikes_mainContainer">
-                            <img className="Home_mainImg" src={bikesOverview} alt="" />
-                            <BikeTile bikeTileTitle="TR11" bikeTileImage={tr11} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front" bikeSelect={this.handleBikeClick}/>
-                            <BikeTile bikeTileTitle="SENTINEL" bikeTileImage={sentinel} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front"/>
-                            <BikeTile bikeTileTitle="PATROL" bikeTileImage={patrol} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front"/>
-                            <BikeTile bikeTileTitle="SCOUT" bikeTileImage={scout} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front"/>
-                            <BikeTile bikeTileTitle="SMUGGLER" bikeTileImage={smuggler2} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front"/>
-                            <BikeTile bikeTileTitle="THROTTLE" bikeTileImage={throttle} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front"/>
-                            <BikeTile bikeTileTitle="VANQUISH" bikeTileImage={vanquish} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front"/>
-                            <BikeTile bikeTileTitle="PBJ" bikeTileImage={pbj} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front"/>
-                            <BikeTile bikeTileTitle="RIPCORD" bikeTileImage={ripcord} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front"/>
-                          </div>
+            <img className="Home_mainImg" src={bikesOverview} alt="" />
+            <BikeTile bikeTileTitle="TR11" bikeTileImage={tr11} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front" bikeSelect={this.handleBikeClick} />
+            <BikeTile bikeTileTitle="SENTINEL" bikeTileImage={sentinel} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front" />
+            <BikeTile bikeTileTitle="PATROL" bikeTileImage={patrol} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front" />
+            <BikeTile bikeTileTitle="SCOUT" bikeTileImage={scout} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front" />
+            <BikeTile bikeTileTitle="SMUGGLER" bikeTileImage={smuggler2} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front" />
+            <BikeTile bikeTileTitle="THROTTLE" bikeTileImage={throttle} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front" />
+            <BikeTile bikeTileTitle="VANQUISH" bikeTileImage={vanquish} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front" />
+            <BikeTile bikeTileTitle="PBJ" bikeTileImage={pbj} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front" />
+            <BikeTile bikeTileTitle="RIPCORD" bikeTileImage={ripcord} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front" />
+        </div>
 
-        if(this.state.displayBike) {
+        if (this.state.displayBike) {
             let whichBike = ''
-            if(this.props.match.params.bikeId) {
+            if (this.props.match.params.bikeId) {
                 whichBike = this.props.match.params.bikeId.toString()
             }
             console.log(whichBike)
-            switch(whichBike) {
+            switch (whichBike) {
                 case 'tr11':
-                    bikeDisplay = <TR11/>
+                    bikeDisplay = <TR11 />
                     break
                 case 'PATROL':
-                    bikeDisplay = <Patrol/>
+                    bikeDisplay = <Patrol />
                     break
                 case 'PBJ':
-                    bikeDisplay = <PBJ/>
+                    bikeDisplay = <PBJ />
                     break
                 case 'RIPCORD':
-                    bikeDisplay = <Ripcord/>
+                    bikeDisplay = <Ripcord />
                     break
                 case 'SCOUT':
-                    bikeDisplay = <Scout/>
+                    bikeDisplay = <Scout />
                     break
                 case 'SENTINEL':
-                    bikeDisplay = <Sentinel/>
+                    bikeDisplay = <Sentinel />
                     break
                 case 'SMUGGLER':
-                    bikeDisplay = <Smuggler/>
+                    bikeDisplay = <Smuggler />
                     break
                 case 'THROTTLE':
-                    bikeDisplay = <Throttle/>
+                    bikeDisplay = <Throttle />
                     break
                 case 'VANQUISH':
-                    bikeDisplay = <Vanquish/>
+                    bikeDisplay = <Vanquish />
                     break
                 default:
                     bikeDisplay = <div>So sorry, it appears this bike does not exist.</div>
