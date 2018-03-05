@@ -68,7 +68,7 @@ class Account extends Component {
                     expandedBackgroundColor='gray'
                     boxTitle='MY ORDER HISTORY'
                 >{ orderHistoryStuff }</ExpandableBox>
-                <div className='notExpanded boxTitle'><a href='http://localhost:3002/logout'>LOGOUT</a></div>
+                <div className='notExpanded boxTitle'><a href={process.env.REACT_APP_LOGOUT_REDIRECT}>LOGOUT</a></div>
                 <div className='notExpanded'></div>
             </div>
         )
