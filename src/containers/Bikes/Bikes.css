@@ -4,3 +4,7 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+.Bikes_mainImg {
+    width: 100%;
+}

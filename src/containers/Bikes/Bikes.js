@@ -17,17 +17,19 @@ import vanquish from '../../images/BikeButton_Vanquish.gif'
 export default function Bikes() {
 
     return (
-        <div className="Bikes_mainContainer">
-            <img className="Home_mainImg" src={bikesOverview} alt="" />
-            <BikeTile bikeTileTitle="TR11" bikeTileImage={tr11} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front" />
-            <BikeTile bikeTileTitle="SENTINEL" bikeTileImage={sentinel} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front" />
-            <BikeTile bikeTileTitle="PATROL" bikeTileImage={patrol} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front" />
-            <BikeTile bikeTileTitle="SCOUT" bikeTileImage={scout} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front" />
-            <BikeTile bikeTileTitle="SMUGGLER" bikeTileImage={smuggler2} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front" />
-            <BikeTile bikeTileTitle="THROTTLE" bikeTileImage={throttle} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front" />
-            <BikeTile bikeTileTitle="VANQUISH" bikeTileImage={vanquish} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front" />
-            <BikeTile bikeTileTitle="PBJ" bikeTileImage={pbj} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front" />
-            <BikeTile bikeTileTitle="RIPCORD" bikeTileImage={ripcord} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front" />
+        <div className="Bikes_container">
+            <img className="Bikes_mainImg" src={bikesOverview} alt="" />
+            <div className="Bikes_mainContainer">
+                <BikeTile bikeTileTitle="TR11" bikeTileImage={tr11} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front" />
+                <BikeTile bikeTileTitle="SENTINEL" bikeTileImage={sentinel} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front" />
+                <BikeTile bikeTileTitle="PATROL" bikeTileImage={patrol} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front" />
+                <BikeTile bikeTileTitle="SCOUT" bikeTileImage={scout} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear /  200mm Front" />
+                <BikeTile bikeTileTitle="SMUGGLER" bikeTileImage={smuggler2} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front" />
+                <BikeTile bikeTileTitle="THROTTLE" bikeTileImage={throttle} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front" />
+                <BikeTile bikeTileTitle="VANQUISH" bikeTileImage={vanquish} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front" />
+                <BikeTile bikeTileTitle="PBJ" bikeTileImage={pbj} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front" />
+                <BikeTile bikeTileTitle="RIPCORD" bikeTileImage={ripcord} bikeTileInfo1='27.5" Wheels' bikeTileInfo2="195mm Rear / 200mm Front" />
+            </div>
         </div>
     )
 
