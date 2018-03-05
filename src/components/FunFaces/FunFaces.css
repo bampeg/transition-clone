@@ -1,3 +1,9 @@
+@media (min-width: 1100px) {
+    .FunFaces_mainContainer {
+        padding: 1em;
+    }
+}
+
 .FunFaces_mainContainer {
     display: flex;
     justify-content: center;

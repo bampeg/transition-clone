@@ -3,3 +3,9 @@
     margin: 2px;
     align-self: center;
 }
+
+@media (min-width: 1100px) {
+    .HoverImage {
+        width: 7%;
+    }
+}

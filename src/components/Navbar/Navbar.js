@@ -49,6 +49,9 @@ class Navbar extends Component {
                                 <Link to='/Who'><div onClick={ () => this.setState({ expanded: false }) }>WHO WE ARE</div></Link>
                                 <Link to='/Bikes'><div onClick={ () => this.setState({ expanded: false }) }>BIKES</div></Link>
                                 <Link to='/Store'><div onClick={ () => this.setState({ expanded: false }) }>STORE</div></Link>
+                                <Link to='/Demo'><div onClick={ () => this.setState({ expanded: false }) }>DEMO</div></Link>
+                                <Link to='/Dealers'><div onClick={ () => this.setState({ expanded: false }) }>DEALERS</div></Link>
+                                <Link to='/Support'><div onClick={ () => this.setState({ expanded: false }) }>SUPPORT</div></Link>
                                 <div className="Navbar_imageLinks">
                                     <Link to='/Account_Login'><img onClick={ () => this.setState({ expanded: false }) } src={ accountImg } alt=""/></Link>
                                     <Link to='/Cart'><img onClick={ () => this.setState({ expanded: false }) } src={ cartImg } alt=""/></Link>
@@ -64,9 +67,24 @@ class Navbar extends Component {
 
         return(
             <div className='Navbar_container'>
+                <Link to='/Home'>{ logo }</Link>
                 <div className='Navbar'>
-                    <Link to='/Home'>{ logo }</Link>
                     <img className='Navbar_hamburger' onClick={ () => this.openHamburger() } src={ hamburger } alt=''/>
+
+                    <a href='https://visitor.r20.constantcontact.com/manage/optin?v=001yKVyJhIEkj62DU2Kcv3m_elnV5mIlfkWDhuDdrNQDAqo17ZDVWX5WNeXl0jW-Z31Lx4hezDnGkyzxoN0wYQhQbBR_0YKOgiXe0TK8fpC6_Y%3D'><img src={ emailImg } alt=""/></a>
+                    <a href='https://vimeo.com/channels/301304'><img src={ vimeoImg } alt=""/></a>
+                    <a href='https://www.instagram.com/transitionbikes/'><img src={ instaImg } alt=""/></a>
+                    <a href='https://www.facebook.com/TransitionBikeCo/'><img src={ facebookImg } alt=""/></a>
+
+                    <Link to='/Cart'><img onClick={ () => this.setState({ expanded: false }) } src={ cartImg } alt=""/></Link>
+                    <Link to='/Account_Login'><img onClick={ () => this.setState({ expanded: false }) } src={ accountImg } alt=""/></Link>
+
+                    <Link to='/Support'><div onClick={ () => this.setState({ expanded: false }) }>SUPPORT</div></Link>
+                    <Link to='/Dealers'><div onClick={ () => this.setState({ expanded: false }) }>DEALERS /</div></Link>
+                    <Link to='/Demo'><div onClick={ () => this.setState({ expanded: false }) }>DEMO /</div></Link>
+                    <Link to='/Store'><div onClick={ () => this.setState({ expanded: false }) }>STORE /</div></Link>
+                    <Link to='/Bikes'><div onClick={ () => this.setState({ expanded: false }) }>BIKES /</div></Link>
+                    <Link to='/Who'><div onClick={ () => this.setState({ expanded: false }) }>WHO WE ARE /</div></Link>
                 </div>
                 { expandedContent }
             </div>

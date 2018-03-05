@@ -17,6 +17,7 @@ export default class App extends Component {
           <div className="App_container">
             <Navbar/>
             <Switch>
+              <Route path='/Bikes/:bikeId' component={ Bikes }/>
               <Route path='/Bikes' component={ Bikes }/>
               <Route path='/Who' component={ Who }/>
               <Route path='/Account_Login' component={ Account_Login }/>
